@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, "..", "public")));
 
-app.use((req, res, next) => {
+app.use((_, res) => {
   res.redirect("/");
 });
 
