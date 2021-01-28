@@ -1,0 +1,12 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 15% auto;
+}
+
+.header-row {
+  grid-row: 1;
+}
+
+.layout-body {
+  grid-row: 2;
+}
