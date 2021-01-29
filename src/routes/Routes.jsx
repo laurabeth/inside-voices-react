@@ -1,18 +1,15 @@
 import { Switch, Route } from 'react-router-dom';
-import AccountSettings from '../pages/AccountSettings';
-import CreatePlaylist from '../pages/CreatePlayList';
+import { AccountSettings, CreatePlaylist, Help, Home, SignIn, SignUp } from '../pages';
 
-const Routes = () => {
+export default Routes = () => {
 	return (
 		<Switch>
-			<Route path="/" />
-			<Route path="/" component={AccountSettings} />
-			<Route path="/" component={CreatePlaylist} />
-			<Route path="/" component={Help} />
-			<Route path="/" component={SignIn} />
-			<Route path="/" component={SignUp} />
+			<Route path="/" component={Home} />
+			<Route exact path="/account-settings" component={AccountSettings} />
+			<Route exact path="/create-playlist" component={CreatePlaylist} />
+			<Route exact path="/help" component={Help} />
+			<Route exact path="/sign-in" component={SignIn} />
+			<Route exact path="/sign-up" component={SignUp} />
 		</Switch>
 	);
 };
-
-export default Routes;

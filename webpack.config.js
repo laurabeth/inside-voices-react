@@ -5,19 +5,25 @@ module.exports = {
 	mode: 'development',
 	output: {
 		filename: 'bundle.js',
-		path: path.join(__dirname, 'public'),
+		path: path.join(__dirname, 'public', 'dist'),
 	},
 	module: {
 		rules: [
 			{
 				loader: 'babel-loader',
-				test: /\.js$/,
+				test: /\.jsx?$/,
 				exclude: /node_modules/,
 			},
 		],
 	},
 	devServer: {
 		contentBase: path.join(__dirname, 'public'),
-		hot: true,
+		historyApiFallback: true,
+		port: 3000,
+		publicPath: '/dist/',
+	},
+	devtool: 'inline-source-map',
+	resolve: {
+		extensions: ['.js', '.jsx'],
 	},
 };
