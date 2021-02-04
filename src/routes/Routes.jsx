@@ -1,7 +1,8 @@
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { AccountSettings, CreatePlaylist, Help, Home, SignIn, SignUp } from '../pages';
 
-export default Routes = () => {
+const Routes = () => {
 	return (
 		<Switch>
 			<Route path="/" component={Home} />
@@ -13,3 +14,5 @@ export default Routes = () => {
 		</Switch>
 	);
 };
+
+export default Routes;

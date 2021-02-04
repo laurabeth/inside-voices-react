@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Routes from '../routes/Routes';
+import Routes from '../routes/Routes.jsx';
 
 const Layout = () => {
 	return (

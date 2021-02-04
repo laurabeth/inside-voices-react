@@ -21,6 +21,7 @@ module.exports = {
 		historyApiFallback: true,
 		port: 3000,
 		publicPath: '/dist/',
+		hot: true,
 	},
 	devtool: 'inline-source-map',
 	resolve: {

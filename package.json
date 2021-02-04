@@ -8,7 +8,7 @@
     "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "serve": "webpack serve --open --hot server/index.js"
+    "serve": "webpack serve --open --watch server/index.js"
   },
   "keywords": [],
   "author": "",
