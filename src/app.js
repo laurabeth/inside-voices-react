@@ -1,12 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Layout from './layout/Layout';
 
 const App = () => {
-  return (
-    <div>
-      <h1>Inside Voices</h1>
-    </div>
-  );
+	return (
+		<Router>
+			<Layout />
+		</Router>
+	);
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
