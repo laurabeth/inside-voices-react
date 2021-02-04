@@ -7,7 +7,7 @@ const helmet = require('helmet');
 
 app.use(express.static(publicPath));
 
-app.use(helmet({ contentSecurityPolicy: false }));
+app.use(helmet());
 
 app.use((_, res) => {
 	res.redirect('/');
