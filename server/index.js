@@ -13,10 +13,6 @@ app.use((_, res) => {
 	res.redirect('/');
 });
 
-// app.get('*', (_, res) => {
-// 	res.sendFile(path.join(publicPath, 'index.html'));
-// });
-
 app.listen(port, () => {
 	console.log(`Server now listening at http://localhost:${port}`);
 });

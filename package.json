@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve",
+    "serve": "webpack serve",
+    "start": "webpack serve --open --watch server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "serve": "webpack serve --open --watch server/index.js"
+    "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",
